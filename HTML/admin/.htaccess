@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Restricted Area"
-AuthUserFile /Users/alexgarrett/Dropbox/htdocs/tutorials/cms/admin/.htpasswd
-require valid-user
