@@ -1,29 +1,32 @@
 <?php require VIEW_ROOT . '/templates/header.php'; ?>
 
-	<h2>Add page</h2>
+	<h5></h5>
+<fieldset>
+<legend>Add page</legend>
+	<!-- Form Fields Here -->
 
 	<form action="<?php echo BASE_URL; ?>/admin/add.php" method="POST" autocomplete="off">
 		<label for="title">
-			Title
+			Title</label>
 			<input type="text" name="title" id="title">
-		</label>
+		
 
 		<label for="label">
-			Label
+			Label</label>
 			<input type="text" name="label" id="label">
-		</label>
+		
 
 		<label for="slug">
-			Slug
+			Slug</label>
 			<input type="text" name="slug" id="slug">
-		</label>
+		
 
 		<label for="body">
-			Body
-			<textarea name="body" id="body" cols="30" rows="10"></textarea>
-		</label>
+                    Body</label><br/>
+                    <textarea name="body" id="body" cols="70" rows="10"></textarea>
+		
 
 		<input type="submit" value="Add">
 	</form>
-
+</fieldset>
 <?php require VIEW_ROOT . '/templates/footer.php'; ?>

@@ -1,5 +1,5 @@
 <?php require VIEW_ROOT . '/templates/header.php'; ?>
-
+<div class="fad">
 	<?php if (!$page): ?>
 		<p>No page found, sorry.</p>
 	<?php else: ?>
@@ -16,5 +16,5 @@
 		</p>
 
 	<?php endif; ?>
-
+</div>
 <?php require VIEW_ROOT . '/templates/footer.php'; ?>

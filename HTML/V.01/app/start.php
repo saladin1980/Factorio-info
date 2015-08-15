@@ -1,18 +1,19 @@
 <?php
 
-define('DB_HOST', 'localhost');
-define('DB_DBNAME', 'cms');
-define('DB_USER', 'root');
-define('DB_PASS', 'root');
+/* 
+define('DB_HOST', factorioinfo.db.5089743.hostedresource.com);
+define('DB_DBNAME',factorioinfo);
+define('DB_USER', factorioinfo);
+define('DB_PASS', Factorio1nfo!);
 
-define('DSN','mysql:host=' . DB_HOST . ';dbname='.DB_HOST )
-
+define('DSN','mysql:host=' . DB_HOST . ';dbname='.DB_HOST );
+ */
 ini_set('display_errors', 'On');
 
 define('APP_ROOT', __DIR__);
 define('VIEW_ROOT', APP_ROOT . '/views');
-define('BASE_URL', 'http://factorio.info');
+define('BASE_URL', 'http://factorio.info/test');
 
-$db = new PDO(DSN, DB_USER, DB_PASS);
+$db = new PDO('mysql:host=factorioinfo.db.5089743.hostedresource.com;dbname=factorioinfo', 'factorioinfo', 'Factorio1nfo!');
 
 require 'functions.php';
